@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Rubik";
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d1323;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 800px;
+  width: 1200px;
+  gap: 50px;
+  margin: auto;
+}
+
+.left {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1d204b;
+  height: 500px;
+  border-radius: 15px;
+}
+
+.left div {
+  padding: 20px;
+}
+
+.up {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #5746ea;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  height: 300px;
+  width: 233px;
+}
+
+.up h6 {
+  color: #9e96ff;
+  margin-bottom: -15px;
+}
+
+.up h1 {
+  width: 20%;
+  color: #f8f9ff;
+  font-weight: lighter;
+}
+
+.up div p {
+  color: #6d72ae;
+}
+
+.up img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-left: 10px;
+}
+
+.text {
+  color: #6d72ae;
+}
+.text p:hover {
+  cursor: pointer;
+  color: #f8f9ff;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.active {
+  color: #f8f9ff;
+}
+
+.right {
+  width: 80%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  justify-content: space-between;
+  background-color: #1d204b;
+  height: 236px;
+}
+
+.content {
+  background-color: #1d204b;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  padding: 5px;
+  height: 77%;
+  font-weight: lighter;
+}
+
+.content:hover {
+  cursor: pointer;
+  background-color: #34397b;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f4f9f7;
+  margin-left: 15px;
+  width: 85%;
+  font-weight: bolder;
+}
+
+.dots {
+  color: #c8cbff;
+}
+.dots:hover {
+  cursor: pointer;
+}
+
+.icon {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 20px;
+}
+
+
+.current {
+  font-size: 58px;
+  color: #f4f9f7;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.previous {
+  color: #aeb2e5;
+  margin-left: 15px;
+  margin-top: -47px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 430px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    width: 430px;
+    gap: 20px;
+    margin-bottom: 200px;
+  }
+
+  .left {
+    width: 350px;
+    flex-direction: column;
+    justify-content: center;
+    height: 23%;
+  }
+
+  .left div {
+    padding: 0px;
+  }
+
+  .up {
+    flex-direction: row;
+    align-items: center;
+    width: 350px;
+  }
+
+
+  .up h1 {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .up img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .text {
+    color: #6d72ae;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+
+  .right {
+    height: 44%;
+    grid-template-columns: repeat(1, 350px);
+  }
+
+  .card {
+    height: 160px;
+  }
+
+  .content{
+    height: 72%;
+  }
+
+  .time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .current {
+    font-size: 35px;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+
+  .previous {
+    margin-right: 30px;
+    margin-top: -15px;
+    font-size: 15px;
+  }
+}
