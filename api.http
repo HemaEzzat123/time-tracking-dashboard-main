@@ -1,0 +1,7 @@
+#Get 
+
+GET http://localhost:5000/data HTTP/1.1
+Content-Type: application/json
+###
+GET https://fakestoreapi.com/products HTTP/1.1
+Content-Type: application/json
